@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-size: 2.3em;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    line-height: 1.8rem;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+section {
+    width: 320px;
+    height: 450px;
+    position: relative;
+}
+
+section.orange {
+    border-radius: 8px 8px 0 0 ;
+}
+
+section.dark-cyan {
+    border-radius: 0 0 8px 8px;
+}
+
+.cards {
+    padding: 2.7em ;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+.orange .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.orange .btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cyan .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.cyan .btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+
+.dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+.dark-cyan .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.dark-cyan .btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.btn {
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 35px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 50px
+}
+
+@media (min-width:900px) {
+    .row {
+        display: flex;
+    }
+   main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   section.orange{
+       border-radius: 8px 0px 0px 8px;
+   }
+   section.dark-cyan {
+       border-radius: 0 8px 8px 0;
+   }
+
+   section {
+       width: 300px;
+       height: 500px;
+   }
+}
